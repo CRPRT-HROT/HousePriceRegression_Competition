@@ -61,4 +61,9 @@ This helped reject features which weren't helpful.
 Hyperparameters were tuned, partially by hand and partially by HalvingRandomSearchCV for it's relatively greater speed compared to gridsearch.
 I ran into overfitting issues here a few times, but performance was nonetheless raised through tuning.
 
-The model is then fit, predictions are made on the test dataset, and the submission csv is output.
+Finally the model is fit, predictions are made and a csv outputted for submission.
+
+# Further Work To Do
+Currently, I haven't really explored clustering or PCA for this data. There's also much further analysis to do on most of the features, especially regarding inter-correlation.
+Dropping one feature within highly correlated pairs could improve performance by reducing redundancy/multicollinearity.  Different imputation strategies also haven't been explored very much.
+So far only the xgboost model has been used, it would be wise to see how other models such as lasso, elastic net, random forest, and so on, perform. From there, model stacking/blending could be explored.
