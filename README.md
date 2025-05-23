@@ -63,7 +63,7 @@ I ran into overfitting issues here a few times, but performance was nonetheless 
 
 Finally the model is fit, predictions are made and a csv outputted for submission.
 
-# Further Work To Do
+# Future Work To Do
 Currently, I haven't really explored clustering or PCA for this data. There's also much further analysis to do on most of the features, especially regarding inter-correlation.
 Dropping one feature within highly correlated pairs could improve performance by reducing redundancy/multicollinearity.  Different imputation strategies also haven't been explored very much.
 So far only the xgboost model has been used, it would be wise to see how other models such as lasso, elastic net, random forest, and so on, perform. From there, model stacking/blending could be explored.
